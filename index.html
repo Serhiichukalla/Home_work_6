@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My home work 6 (Forms)</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<p class="first_text">Contact Manager </p>
+			<div class="has_sub">
+				<a href="#">More Actions &#9660;
+				<ul class="sab_menu">
+					<li><a href="#">Action 1</a></li>
+					<li><a href="#">Action 2</a></li>
+					<li><a href="#">Action 3</a></li>
+				</ul>
+			 </a>
+			</div>
+			
+		</div>
+		<div class="content">
+			<div class="left_block">
+				<div>
+					<span class="text">First Name</span>
+					<span class="star">*</span>
+					
+				</div>
+				
+				<input type="text" required="required">
+
+				<div>
+					<span class="text">Last Name</span>
+					<span class="star">*</span>
+				</div>
+				<input type="text">
+
+				<div class="address_block">
+					<span class="text">Address</span>
+				</div>
+				<input type="text"  class="address">
+
+				<div>
+					<span class="text">City</span>
+				</div>
+				<input type="text">
+
+				<div>
+					<span class="text">State</span>
+				</div>
+
+				<select size="1">
+					<option>-Select-</option>
+					<option>State 1</option>
+					<option>State 2</option>
+					<option>State 3</option>
+					<option>State 4</option>
+					<option>State 5</option>
+					<option>State 6</option>
+					<option>State 7</option>
+					<option>State 8</option>
+					<option>State 9</option>
+				</select>
+
+				<div>
+					<span class="text">Zip</span>
+				</div>
+				<input type="text">
+
+				<div>
+					<span class="text">Home Phone</span>
+				</div>
+				<input type="text" class="short_input">
+
+				<div>
+					<span class="text">Work Phone</span>
+					<span class="star">*</span>
+				</div>
+				<input type="text">
+
+				<div>
+					<span class="text">Fax number</span>
+				</div>
+				<input type="text" class="short_input">
+				<div class="site">
+					<div class="website" >
+						Website
+					</div>
+					<div class="conteiner">
+						<div class="link">
+							<span class="text">URL</span>
+							<input type="text" class="url_input">
+						</div>
+						<div class="link">
+							<span class="text">Link name</span>
+							<input type="text" class="url_input">
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<span class="text">Email Adress</span>
+					<span class="star">*</span>
+				</div>
+				<input type="text">
+			</div>
+
+			<div class="right_block">
+				<div>
+					<span>When is the best time to contact you?</span>
+					<form action="handler.php" class="time">
+    					<p><input name="Morning" type="radio" value="Morning">Morning</p>
+   						<p><input name="Afternoon" type="radio" value="Afternoon">Afternoon</p>
+    					<p><input name="Evening" type="radio" value="Evening">Evening</p>
+  					</form> 
+				</div>
+				<div>
+					<span>When is the best way to contact you?</span>
+					<form action="handler.php" class="time">
+    					<p><input name="Phone" type="radio" value="Phone">Phone</p>
+   						<p><input name="Email" type="radio" value="Email">Email</p>
+    					<p><input name="Fax" type="radio" value="Fax">Fax</p>
+  					</form> 
+				</div>
+				<div class="message">
+					<span>Message</span>
+					<textarea name="Message" cols="23" rows="6"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			 <p><input type="submit" value="Submit" class="first_button"></p>
+			 <p><input type="reset" value="Reset" class="second_button"></p>
+		</div>
+		
+	</div>
+</body>
+</html>
